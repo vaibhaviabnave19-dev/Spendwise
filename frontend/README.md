@@ -1,70 +1,165 @@
-# Getting Started with Create React App
+# 💰 SpendWise - Personal Finance Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SpendWise is a full-stack web application designed to help users manage personal expenses, track spending habits, and improve financial awareness. It provides a simple dashboard for expense tracking and includes an AI-powered assistant for basic financial guidance.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+🌐 **Frontend (Vercel):**  
+https://spendwise-nine-rust.vercel.app  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🖥️ **Backend (Render):**  
+https://spendwise-backend-4qp1.onrender.com  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔍 **Health Check API:**  
+https://spendwise-backend-4qp1.onrender.com/health  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Project Objective
 
-### `npm run build`
+The objective of SpendWise is to build a practical personal finance management system that helps users:
+- Track daily expenses
+- Analyze spending patterns
+- Improve budgeting discipline
+- Get basic AI-based financial insights
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- User Authentication (Signup & Login using JWT)
+- Secure token-based authentication system
+- Add, view, and manage expenses
+- Responsive and clean dashboard UI
+- REST API integration between frontend and backend
+- AI-powered financial assistant (chat-based suggestions)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Fetch API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend
+- Flask (Python)
+- Flask-JWT-Extended
+- Flask-CORS
+- SQLAlchemy
+- SQLite Database
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+SpendWise/
+│
+├── backend/
+│   ├── config/
+│   ├── database/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── .gitignore
+│
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚙️ Installation Guide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1️⃣ Clone Repository
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/vaibhaviabnave19-dev/Spendwise.git
+cd Spendwise
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### 2️⃣ Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-### Advanced Configuration
+Backend will run at:
+```
+http://localhost:5000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### 3️⃣ Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Open a new terminal:
 
-### `npm run build` fails to minify
+```bash
+cd frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend will run at:
+```
+http://localhost:3000
+```
+
+---
+
+## 🔐 Environment Variables
+
+### Frontend (Vercel)
+
+```
+REACT_APP_API_URL = https://spendwise-backend-4qp1.onrender.com
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Advanced analytics dashboard with charts
+- Budget planning system
+- Monthly expense reports
+- Email notifications
+- Mobile application (React Native)
+- Enhanced AI financial assistant
+
+---
+
+## 👩‍💻 Internship Project Highlights
+
+This project demonstrates practical skills in:
+
+- Full-stack web development
+- REST API design and integration
+- Authentication and authorization (JWT)
+- Frontend-backend communication
+- Cloud deployment (Vercel & Render)
+- Real-world project structuring and debugging
+
+---
+
+## 👤 Author
+
+**Vaibhavi Abnave**  
+GitHub: https://github.com/vaibhaviabnave19-dev
